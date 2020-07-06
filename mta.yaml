@@ -1,3 +1,15 @@
 ID: ui5-example1
 _schema-version: "2.1"
 version: 0.0.3
+parameters:
+  enable-parallel-deployments: true
+  
+modules:
+  - name: ui5-example1-app
+    type: nodejs
+    path: ./
+    build-parameters:
+      ignore: ["node_modules/"]
+    parameters:
+      memory: 256M
+      disk-quota: 1024M
