@@ -1,23 +1,22 @@
 {
-    "name": "ui5-example1",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-      "start": "node start.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/darmeshnana/UI5-Example1.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/darmeshnana/UI5-Example1/issues"
-    },
-    "homepage": "https://github.com/darmeshnana/UI5-Example1#readme",
-    "description": "",
-    "dependencies": {
-      "express": "^4.17.1"
-    }
+  "name": "ui5-example1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darmeshnana/UI5-Example1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darmeshnana/UI5-Example1/issues"
+  },
+  "homepage": "https://github.com/darmeshnana/UI5-Example1#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
   }
-  
+}
