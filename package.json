@@ -1,7 +1,7 @@
 {
   "name": "ui5-example1",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "start.js",
   "scripts": {
     "start": "node start.js"
   },
