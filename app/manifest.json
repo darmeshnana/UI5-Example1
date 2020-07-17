@@ -1,0 +1,69 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "myapp",
+		"type": "application",
+        "applicationVersion": {"version": "1.0.0"}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.75.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.unified": {}
+			}
+		},
+    
+		"rootView": {
+			"viewName": "Example1.app.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+    "routing": {
+        "config": {
+            "routerClass":        "sap.m.routing.Router",
+            "viewPath":           "Example1.app.view",
+            "controlId":          "rootControl",
+            "controlAggregation": "pages",
+            "viewType":           "XML"
+        },
+        "routes": [ 
+            {   "name"    : "main",
+                "pattern" : "",
+                "target"  : "main" },
+            {   "name"    : "detail",
+                "pattern" : "detail",
+                "target"  : "detail" }
+        ],
+        "targets": {  
+            "main"    : { viewName: "main" },
+            "detail"  : { viewName: "detail" }                        
+        }
+    },
+    
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "sap.ui.demo.todo.i18n.i18n",
+					"supportedLocales": ["en", "de"],
+					"fallbackLocale": "en"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/todoitems.json"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		}
+	}
+}
