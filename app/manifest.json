@@ -39,8 +39,8 @@
                 "target"  : "detail" }
         ],
         "targets": {  
-            "main"    : { viewName: "main" },
-            "detail"  : { viewName: "detail" }                        
+            "main"    : { "viewName": "main" },
+            "detail"  : { "viewName": "detail" }                        
         }
     },
     
