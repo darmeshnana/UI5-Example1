@@ -18,5 +18,6 @@
   "description": "ui5 example",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
