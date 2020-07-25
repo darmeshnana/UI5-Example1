@@ -10,7 +10,7 @@
 		"description": "{{appDescription}}",
 		"dataSources": {
 			"Northwind.svc.approuter": {
-				"uri": "/TRiPv4/northwind/V2/Northwind/Northwind.svc/",
+				"uri": "/myapp/northwind/V2/Northwind/Northwind.svc/",
 				"type": "OData"
 			},
 			"Northwind.svc": {
@@ -50,7 +50,8 @@
 			"cozy": true
 		},
 		"rootView": {
-			"viewName": "Example1.app.view.App"
+			"viewName": "Example1.app.view.App",
+		    	"type": "XML"
 		},		
 		"models": {
 			"i18n": {
