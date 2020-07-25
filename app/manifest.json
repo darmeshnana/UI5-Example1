@@ -3,13 +3,39 @@
 	"sap.app": {
 		"id": "Example1.app",
 		"type": "application",
-        "applicationVersion": {"version": "1.0.0"}
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"dataSources": {
+			"Northwind.svc.approuter": {
+				"uri": "/TRiPv4/northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData"
+			},
+			"Northwind.svc": {
+				"uri": "/V2/Northwind/Northwind.svc/",
+				"type": "OData"
+			}			
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
 	},
 	"sap.ui5": {
-		"rootView": {
-			"viewName": "Example1.app.view.App",
-			"type": "XML"
-		},
 		"dependencies": {
 			"minUI5Version": "1.75.0",
 			"libs": {
@@ -23,6 +49,9 @@
 			"compact": true,
 			"cozy": true
 		},
+		"rootView": {
+			"viewName": "Example1.app.view.App"
+		},		
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
@@ -33,16 +62,9 @@
 				}
 			},
 			"": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "https://services.odata.org/V4/Northwind/Northwind.svc"
+				"dataSource": "Northwind.svc",
+				"preload": true
 			}
-		},
-		"resources": {
-			"css": [
-				{
-					"uri": "css/styles.css"
-				}
-			]
 		},
 		"routing": {
 			"config": {
