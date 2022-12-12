@@ -17,7 +17,7 @@
   "homepage": "https://github.com/darmeshnana/UI5-Example1#readme",
   "description": "ui5 example",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {}
 }
